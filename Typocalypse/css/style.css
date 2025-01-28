@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+li {
+    font-family: sans-serif;
+    font-size: 20px;
+    list-style: "-   ";
+    margin-bottom: 10px;
+}
+
+#gameContainer {
+    display: flex;
+    position: relative;
+    width: 2000px;
+    height: 1000px;
+    border: 20px black;
+    border-style: solid;
+    align-items: end;
+    justify-content: center;
+
+}
+
+#scoreBoard {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBoard h2 {
+    margin: 5px;
+    z-index: 2;
+}
+
+#canvas {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+#background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2000px;
+    height: 1000px;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-color: transparent;
+    align-items: center;
+    display: none;
+
+}
+
+#type-area {
+    display: none;
+    background-color: rgba(80, 80, 80, 0.8);
+    color: rgb(240, 240, 240);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 500px;
+    height: 60px;
+    border-radius: 1000px;
+    border-style: solid;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    margin-bottom: 75px;
+
+
+}
+
+#startScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-image: url("../images/start.png");
+    align-self: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#startUI {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    align-self: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+}
+
+
+#endScreen {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-image: url("../images/end.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+button {
+    width: 250px;
+    height: 50px;
+}
+
+/* add styles for other HTML elements of your game */

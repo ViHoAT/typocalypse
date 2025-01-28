@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Typocalypse</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+
+  <div id="gameContainer">
+
+    <!-- start -->
+    <div id="startScreen">
+      <div id="startUI">
+        <button type="button" id="startGame">Start Game</button>
+        <ul>
+          <li>Type the word above the platform</li>
+          <li>You can only teleport/jump after you typed the whole word</li>
+          <li>Press "Enter" to teleport to the front</li>
+          <li>Press "Space" to jump</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- game -->
+    <div id="background"></div>
+    <canvas id="canvas" width="2000" height="1000"></canvas>
+
+    <input id="type-area" autofocus autocomplete="off">
+
+    <div id="scoreBoard">
+
+      <h2>Score: <span id="score">0</span></h2>
+      <h2>Highscore: <span id="highscore">0</span></h2>
+    </div>
+
+    <!-- end -->
+    <div id="endScreen">
+      <button type="button" id="restart">Restart</button>
+      <h2>Last words: <span id="lastWords"></span></h2>
+
+    </div>
+
+  </div>
+
+
+  <!-- further HTML elements, that should maybe be displayed below your game. E.g. Score, .... -->
+  <!-- <div id="scoreDisplay">Score: </div> -->
+
+  <script type="module" src="./scripts/modules/global.js"></script>
+  <script type="module" src="./scripts/modules/input.js"></script>
+  <script type="module" src="./scripts/modules/main.js"></script>
+
+</body>
+
+</html>
